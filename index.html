@@ -1,44 +1,44 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Porto Calvo Notícias</title>
-  <meta name="description" content="Notícias de Porto Calvo e região">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Porto Calvo Notícias</h1>
-    <nav>
-      <a href="https://www.instagram.com/portocalvo_noticias" target="_blank">Instagram</a>
-      <a href="https://youtube.com/@portocalvonoticias" target="_blank">YouTube</a>
-      <a href="#">E-mail (em breve)</a>
-    </nav>
-  </header>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Porto Calvo Notícias</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Redireciona para o painel do CMS se for link de recuperação de senha -->
+    <script>
+      if (window.location.hash.startsWith('#recovery_token=')) {
+        window.location.href = '/admin/' + window.location.hash;
+      }
+    </script>
 
-  <section class="ads">
-    <div class="ad">[AdSense Topo]</div>
-  </section>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Porto Calvo Notícias</h1>
+      <nav>
+        <a href="https://www.instagram.com/portocalvo_noticias">Instagram</a>
+        <a href="https://youtube.com/@portocalvonoticias">YouTube</a>
+        <span>E-mail (em breve)</span>
+      </nav>
+    </header>
 
-  <main>
-    <article>
-      <h2>Bem-vindo ao novo site</h2>
-      <p>Esse é o portal oficial de notícias de Porto Calvo e região. Aqui você encontra informações confiáveis sobre política, cultura, eventos, concursos e muito mais.</p>
-    </article>
+    <main>
+      <section>
+        <h2>Bem-vindo ao novo site</h2>
+        <p>Esse é o portal oficial de notícias de Porto Calvo e região. Aqui você encontra informações confiáveis sobre política, cultura, eventos, concursos e muito mais.</p>
+      </section>
 
-    <article>
-      <h2>Exemplo de Notícia</h2>
-      <p>Esta é uma notícia de exemplo. Quando você publicar novas matérias pelo painel, elas aparecem aqui automaticamente.</p>
-    </article>
+      <section>
+        <h2>Exemplo de Notícia</h2>
+        <p>Esta é uma notícia de exemplo. Quando você publicar novas matérias pelo painel, elas aparecem aqui automaticamente.</p>
+        <div class="adsense">[AdSense Meio]</div>
+      </section>
+    </main>
 
-    <section class="ads">
-      <div class="ad">[AdSense Meio]</div>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Porto Calvo Notícias. Todos os direitos reservados.</p>
-  </footer>
-</body>
+    <footer>
+      <p>&copy; 2025 Porto Calvo Notícias. Todos os direitos reservados.</p>
+    </footer>
+  </body>
 </html>
