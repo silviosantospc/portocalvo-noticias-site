@@ -1,13 +1,12 @@
 backend:
-  name: github
-  repo: silviosantospc/portocalvo-noticias-site
+  name: git-gateway
   branch: main
 
-media_folder: "images/uploads"
-public_folder: "/images/uploads"
+media_folder: "static/img"
+public_folder: "/img"
 
 collections:
-  - name: "noticias"
+  - name: "posts"
     label: "Notícias"
     folder: "noticias"
     create: true
