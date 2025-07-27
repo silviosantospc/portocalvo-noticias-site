@@ -1,12 +1,13 @@
 backend:
   name: git-gateway
   branch: main
+  site_url: https://portocalvonoticias.com.br
 
 media_folder: "static/img"
 public_folder: "/img"
 
 collections:
-  - name: "posts"
+  - name: "noticias"
     label: "Notícias"
     folder: "noticias"
     create: true
