@@ -13,121 +13,157 @@
   <!-- Estilos -->
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-
-<header class="topo">
-  <div class="topo-linha">
-    <div class="logo">
-      <span>Porto Calvo Notícias</span>
+  <header class="topo">
+    <div class="topo-linha">
+      <div class="logo">
+        Porto Calvo <span>Notícias</span>
+      </div>
+      <nav class="menu">
+        <a href="#ultimas">Início</a>
+        <a href="#cidade">Cidade</a>
+        <a href="#politica">Política</a>
+        <a href="#esportes">Esportes</a>
+        <a href="#contato">Contato</a>
+      </nav>
     </div>
-    <nav class="menu">
-      <a href="index.html">Início</a>
-      <a href="#cidade">Cidade</a>
-      <a href="#politica">Política</a>
-      <a href="#esportes">Esportes</a>
-      <a href="#contato">Contato</a>
-    </nav>
-  </div>
-</header>
 
-<!-- Faixa de anúncio (Topo) -->
-<div class="faixa-anuncio">
-  <p>Espaço reservado para banner do Google AdSense 728x90</p>
-</div>
+    <!-- Espaço para banner de topo (AdSense) -->
+    <div class="faixa-anuncio">
+      <!-- Aqui você coloca o bloco de anúncio do AdSense quando estiver aprovado -->
+      <p>Espaço reservado para banner do Google AdSense 728x90</p>
+    </div>
+  </header>
 
-<section class="grid-principal">
+  <main class="conteudo">
+    <section class="grid-principal">
+      <!-- Coluna principal de notícias -->
+      <div class="coluna-noticias">
+        <section id="ultimas" class="bloco destaque">
+          <h2>Última notícia em destaque</h2>
 
-  <!-- Coluna principal -->
-  <div class="coluna-noticias">
+          <article class="card card-destaque">
+            <p class="meta">Porto Calvo • 28 de novembro de 2025</p>
+            <h1>Caminhão desce de ré e bate em residência na Ladeira de São Benedito</h1>
+            <p>
+              Um caminhão perdeu força enquanto subia a Ladeira de São Benedito e desceu de ré,
+              atingindo a fachada de uma residência. Moradores levaram um susto, mas ninguém ficou
+              ferido.
+            </p>
+            <a class="link-materia" href="noticias/acidente-ladeira-sao-benedito.html">Ler matéria completa</a>
+          </article>
+        </section>
 
-    <!-- Destaque -->
-    <section id="ultimas" class="bloco destaque">
-      <h2>Última notícia em destaque</h2>
+        <section class="bloco lista-noticias" id="cidade">
+          <h2>Mais notícias</h2>
 
-      <article class="card card-destaque">
-        <p class="meta">Porto Calvo • 28 de novembro de 2025</p>
+          <!-- Sua notícia listada -->
+          <article class="card">
+            <h3>
+              <a href="noticias/acidente-ladeira-sao-benedito.html">
+                Caminhão desce de ré e bate em residência na Ladeira de São Benedito
+              </a>
+            </h3>
+            <p class="meta">Porto Calvo • 28 de novembro de 2025</p>
+            <p>
+              Caminhão perdeu força e voltou de ré, batendo em uma residência. Moradores levaram susto,
+              mas ninguém ficou ferido.
+            </p>
+          </article>
 
-        <h1>Caminhão desce de ré e bate em residência na Ladeira de São Benedito</h1>
+          <!-- Modelos de notícias para você ir trocando depois -->
+          <article class="card">
+            <h3><a href="noticias/exemplo1.html">Título de exemplo de notícia 1</a></h3>
+            <p class="meta">Porto Calvo • Data</p>
+            <p>
+              Pequeno resumo da notícia. Aqui você explica em duas ou três linhas
+              o que aconteceu, sem muito rodeio.
+            </p>
+          </article>
 
-        <p>
-          Um caminhão perdeu força enquanto subia a Ladeira de São Benedito e desceu de ré,
-          atingindo a fachada de uma residência. Moradores levaram um susto, mas ninguém ficou
-          ferido.
-        </p>
+          <article class="card">
+            <h3><a href="noticias/exemplo2.html">Título de exemplo de notícia 2</a></h3>
+            <p class="meta">Região Norte • Data</p>
+            <p>
+              Mais um espaço para notícia rápida, pode ser de outra cidade da região,
+              sempre com foco no leitor local.
+            </p>
+          </article>
 
-        <a class="link-materia" href="noticias/acidente-ladeira-sao-benedito.html">Ler matéria completa</a>
-      </article>
+          <article class="card">
+            <h3><a href="noticias/exemplo3.html">Título de exemplo de notícia 3</a></h3>
+            <p class="meta">Porto Calvo • Data</p>
+            <p>
+              Você pode usar este modelo para avisos de serviço: trânsito, água,
+              energia, saúde, educação, inscrições, eventos, etc.
+            </p>
+          </article>
+        </section>
+
+        <!-- Bloco para esportes -->
+        <section class="bloco" id="esportes">
+          <h2>Esportes e bem-estar</h2>
+          <article class="card">
+            <h3><a href="#">Corridas de rua, ciclismo e esporte amador em Porto Calvo</a></h3>
+            <p class="meta">Porto Calvo • Data</p>
+            <p>
+              Espaço fixo para destacar o movimento de corrida, ciclismo e qualidade
+              de vida que você já acompanha na cidade.
+            </p>
+          </article>
+        </section>
+      </div>
+
+      <!-- Coluna lateral para anúncios e destaques -->
+      <aside class="coluna-lateral">
+        <section class="bloco bloco-anuncio">
+          <h3>Publicidade</h3>
+          <p>Espaço para anúncio de comércio local.</p>
+          <p class="dica-anuncio">
+            Ex: supermercados, pousadas, mercadinhos, farmácias, açougues, bares,
+            oficinas, lojas de roupas, etc.
+          </p>
+        </section>
+
+        <section class="bloco bloco-anuncio">
+          <h3>Banner do parceiro</h3>
+          <p>
+            Aqui você pode colocar uma imagem 300x250 ou 300x600 com link para o
+            cliente.
+          </p>
+        </section>
+
+        <section class="bloco bloco-anuncio">
+          <h3>AdSense lateral</h3>
+          <p>Espaço reservado para bloco de anúncio do Google AdSense na lateral.</p>
+        </section>
+      </aside>
     </section>
 
-    <!-- Mais notícias -->
-    <section class="bloco lista-noticias" id="cidade">
-      <h2>Mais notícias</h2>
-
-      <!-- Notícia nova adicionada -->
-      <article class="card">
-        <h3>
-          <a href="noticias/acidente-ladeira-sao-benedito.html">
-            Caminhão desce de ré e bate em residência na Ladeira de São Benedito
-          </a>
-        </h3>
-        <p class="meta">Porto Calvo • 28 de novembro de 2025</p>
-        <p>
-          Caminhão perdeu força e voltou de ré, batendo em uma residência. Moradores levaram susto,
-          mas ninguém ficou ferido.
-        </p>
-      </article>
-
-      <!-- Modelos de notícias para você duplicar -->
-      <article class="card">
-        <h3><a href="noticias/exemplo1.html">Título de exemplo de notícia 1</a></h3>
-        <p class="meta">Porto Calvo • Data</p>
-        <p>Pequeno resumo da notícia. Aqui você explica o que aconteceu.</p>
-      </article>
-
-      <article class="card">
-        <h3><a href="noticias/exemplo2.html">Título de exemplo de notícia 2</a></h3>
-        <p class="meta">Região Norte • Data</p>
-        <p>Mais um espaço para notícia rápida com foco no leitor local.</p>
-      </article>
-
-      <article class="card">
-        <h3><a href="noticias/exemplo3.html">Título de exemplo de notícia 3</a></h3>
-        <p class="meta">Porto Calvo • Data</p>
-        <p>Notícia de utilidade pública ou serviço à comunidade.</p>
-      </article>
-
+    <section id="contato" class="bloco contato">
+      <h2>Contato e comercial</h2>
+      <p>
+        Para sugestões de pauta, denúncias, envio de fotos e vídeos ou para anunciar
+        no Porto Calvo Notícias:
+      </p>
+      <ul>
+        <li>E-mail: <strong>contato@portocalvonoticias.com.br</strong> (ou o que você usar)</li>
+        <li>Instagram: <a href="https://www.instagram.com/portocalvo_noticias" target="_blank">@portocalvo_noticias</a></li>
+        <li>YouTube: <a href="https://youtube.com/@portocalvonoticias" target="_blank">/portocalvonoticias</a></li>
+      </ul>
     </section>
-  </div>
+  </main>
 
-  <!-- Coluna lateral -->
-  <aside class="coluna-lateral">
+  <footer class="rodape">
+    <p>© <span id="ano"></span> Porto Calvo Notícias. Todos os direitos reservados.</p>
+  </footer>
 
-    <section class="caixa-lateral">
-      <h3>Publicidade</h3>
-      <p>Espaço para anúncio do comércio local.</p>
-    </section>
-
-    <section class="caixa-lateral">
-      <h3>Banner do parceiro</h3>
-      <p>Aqui você pode colocar um banner 300x250 ou 300x600.</p>
-    </section>
-
-    <section class="caixa-lateral">
-      <h3>AdSense lateral</h3>
-      <p>Espaço reservado para anúncios do Google AdSense.</p>
-    </section>
-
-  </aside>
-
-</section>
-
-<footer id="contato">
-  <p>Porto Calvo Notícias • Todos os direitos reservados</p>
-</footer>
-
+  <script>
+    document.getElementById("ano").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
 
 
 
