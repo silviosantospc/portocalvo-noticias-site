@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Título da Notícia - Porto Calvo Notícias</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="topo">
+    <div class="topo-linha">
+      <div class="logo">
+        Porto Calvo <span>Notícias</span>
+      </div>
+      <nav class="menu">
+        <a href="../index.html">Início</a>
+        <a href="#cidade">Cidade</a>
+        <a href="#politica">Política</a>
+        <a href="#esportes">Esportes</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
 
+  <main class="conteudo">
+    <article class="bloco">
+      <p class="meta">Porto Calvo • DATA DA NOTÍCIA</p>
+
+      <h1>Título da notícia</h1>
+
+      <p class="subtitulo">
+        Subtítulo curto explicando o que aconteceu.
+      </p>
+
+      <p>
+        Aqui começa o texto da notícia. Escreva o primeiro parágrafo com o “lead”:
+        o quê aconteceu, quando, onde e quem estava envolvido, de forma objetiva.
+      </p>
+
+      <p>
+        No segundo parágrafo você pode detalhar mais informação, como relatos,
+        contexto, dados oficiais, falas de moradores ou autoridades.
+      </p>
+
+      <p>
+        Use quantos parágrafos precisar. Mantenha sempre o texto direto e claro.
+      </p>
+
+      <p>
+        Se tiver fotos, posso te ensinar a colocar e redimensionar sem pesar o site.
+      </p>
+
+      <hr style="margin: 20px 0; border-color: #333;" />
+
+      <h3>Publicidade</h3>
+      <p>Espaço reservado para anúncio local ou bloco do Google AdSense.</p>
+    </article>
+  </main>
+
+  <footer class="rodape">
+    <p>© <span id="ano"></span> Porto Calvo Notícias.</p>
+  </footer>
+
+  <script>
+    document.getElementById("ano").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
