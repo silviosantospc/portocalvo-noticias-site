@@ -1,84 +1,202 @@
-/* style.css - Tema escuro para Porto Calvo Notícias */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #111;
-  color: #f2f2f2;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #0b0b0d;
+  color: #f5f5f5;
   line-height: 1.6;
 }
 
-header {
-  background: #222;
-  padding: 20px;
-  text-align: center;
-  border-bottom: 3px solid #e60000;
+/* TOPO */
+
+.topo {
+  border-bottom: 2px solid #e50914;
+  background: #000;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2em;
+.topo-linha {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
 }
 
-nav {
-  margin-top: 10px;
+.logo {
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-transform: uppercase;
 }
 
-nav a {
-  color: #f2f2f2;
+.logo span {
+  color: #e50914;
+}
+
+.menu a {
+  color: #f5f5f5;
   text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
+  margin-left: 16px;
+  font-size: 0.9rem;
 }
 
-nav a:hover {
-  color: #e60000;
+.menu a:hover {
+  color: #e50914;
 }
 
-main {
-  padding: 20px;
-  max-width: 800px;
-  margin: auto;
-}
+/* FAIXA DE ANÚNCIO TOPO */
 
-article {
-  background: #1a1a1a;
-  padding: 15px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  border-left: 5px solid #e60000;
-}
-
-.ads {
-  margin: 20px 0;
+.faixa-anuncio {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 8px 16px 12px;
   text-align: center;
-}
-
-.ad {
-  background: #333;
-  padding: 10px;
-  border: 1px dashed #666;
-  border-radius: 5px;
+  font-size: 0.85rem;
   color: #ccc;
-  font-size: 0.9em;
+  border-top: 1px solid #222;
 }
 
-footer {
-  background: #222;
-  padding: 10px;
+/* CONTEÚDO PRINCIPAL */
+
+.conteudo {
+  max-width: 1080px;
+  margin: 20px auto 40px;
+  padding: 0 16px;
+}
+
+.grid-principal {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+/* BLOCO GENÉRICO */
+
+.bloco {
+  background: #151515;
+  border-radius: 10px;
+  padding: 16px 18px;
+  border: 1px solid #262626;
+  margin-bottom: 20px;
+}
+
+.bloco h2 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* NOTÍCIAS */
+
+.card {
+  background: #151515;
+  border-radius: 8px;
+  padding: 12px 14px;
+  border: 1px solid #262626;
+  margin-bottom: 12px;
+}
+
+.card-destaque {
+  border-width: 2px;
+  border-color: #e50914;
+}
+
+.card h3 a,
+.card-destaque h1,
+.card-destaque a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.card h3 a:hover,
+.card-destaque a:hover {
+  color: #e50914;
+}
+
+.meta {
+  font-size: 0.8rem;
+  color: #aaaaaa;
+  margin-bottom: 6px;
+}
+
+.link-materia {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #e50914;
+}
+
+/* COLUNAS */
+
+.coluna-noticias {
+  min-width: 0;
+}
+
+.coluna-lateral {
+  min-width: 0;
+}
+
+/* ANÚNCIOS LATERAIS */
+
+.bloco-anuncio h3 {
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.bloco-anuncio p {
+  font-size: 0.9rem;
+}
+
+.dica-anuncio {
+  font-size: 0.8rem;
+  color: #bbbbbb;
+  margin-top: 6px;
+}
+
+/* CONTATO */
+
+.contato ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-top: 8px;
+}
+
+.contato a {
+  color: #e50914;
+}
+
+/* RODAPÉ */
+
+.rodape {
   text-align: center;
-  font-size: 0.8em;
-  color: #999;
-  border-top: 2px solid #e60000;
+  padding: 16px;
+  font-size: 0.8rem;
+  border-top: 1px solid #262626;
+  background: #000;
 }
 
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 1.5em;
+/* RESPONSIVO */
+
+@media (max-width: 800px) {
+  .grid-principal {
+    grid-template-columns: 1fr;
   }
 
-  nav a {
-    display: block;
-    margin: 5px 0;
+  .topo-linha {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .menu a {
+    margin: 4px 8px 0 0;
   }
 }
