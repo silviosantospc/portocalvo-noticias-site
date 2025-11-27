@@ -4,6 +4,11 @@
   <meta charset="UTF-8" />
   <title>Título da Notícia - Porto Calvo Notícias</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6162361936327215"
+          crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
@@ -14,51 +19,67 @@
       </div>
       <nav class="menu">
         <a href="../index.html">Início</a>
-        <a href="#cidade">Cidade</a>
-        <a href="#politica">Política</a>
-        <a href="#esportes">Esportes</a>
-        <a href="#contato">Contato</a>
+        <a href="../index.html#cidade">Cidade</a>
+        <a href="../index.html#politica">Política</a>
+        <a href="../index.html#esportes">Esportes</a>
+        <a href="../index.html#contato">Contato</a>
       </nav>
     </div>
   </header>
 
   <main class="conteudo">
     <article class="bloco">
+
+      <!-- PASSO 1: Trocar a linha abaixo pela data certa -->
       <p class="meta">Porto Calvo • DATA DA NOTÍCIA</p>
 
+      <!-- PASSO 2: Trocar o título da notícia -->
       <h1>Título da notícia</h1>
 
+      <!-- PASSO 3: Subtítulo curto explicando o que aconteceu -->
       <p class="subtitulo">
-        Subtítulo curto explicando o que aconteceu.
+        Subtítulo curto explicando o que aconteceu em uma frase.
+      </p>
+
+      <!-- PASSO 4 (OPCIONAL): Foto principal da matéria
+           - Suba a imagem na pasta /imagens (ex.: acidente-ladeira.jpg)
+           - Troque o nome do arquivo em src=""
+           - Se não for usar foto, você pode apagar esse <figure> inteiro -->
+      <!--
+      <figure class="foto-materia">
+        <img src="../imagens/NOME-DO-ARQUIVO.jpg"
+             alt="Descrição da imagem para acessibilidade e Google." />
+        <figcaption>Legenda opcional da foto.</figcaption>
+      </figure>
+      -->
+
+      <!-- PASSO 5: Texto da notícia (pode ter quantos parágrafos quiser) -->
+      <p>
+        Aqui começa o texto da notícia. No primeiro parágrafo coloque o “lead”:
+        o que aconteceu, quando, onde e quem estava envolvido, de forma objetiva.
       </p>
 
       <p>
-        Aqui começa o texto da notícia. Escreva o primeiro parágrafo com o “lead”:
-        o quê aconteceu, quando, onde e quem estava envolvido, de forma objetiva.
+        No segundo parágrafo você pode trazer mais detalhes, depoimentos, contexto
+        ou informações de órgãos oficiais (PM, SAMU, prefeitura, etc.).
       </p>
 
       <p>
-        No segundo parágrafo você pode detalhar mais informação, como relatos,
-        contexto, dados oficiais, falas de moradores ou autoridades.
+        Use quantos parágrafos forem necessários para contar a história com clareza.
       </p>
 
-      <p>
-        Use quantos parágrafos precisar. Mantenha sempre o texto direto e claro.
-      </p>
-
-      <p>
-        Se tiver fotos, posso te ensinar a colocar e redimensionar sem pesar o site.
-      </p>
-
-      <hr style="margin: 20px 0; border-color: #333;" />
+      <!-- BLOCO DE PUBLICIDADE DENTRO DA MATÉRIA
+           Aqui depois você pode colocar um código de anúncio local ou AdSense -->
+      <hr style="margin: 24px 0; border-color: #333;" />
 
       <h3>Publicidade</h3>
-      <p>Espaço reservado para anúncio local ou bloco do Google AdSense.</p>
+      <p>Espaço reservado para anúncio local ou bloco de anúncio do Google AdSense.</p>
+
     </article>
   </main>
 
   <footer class="rodape">
-    <p>© <span id="ano"></span> Porto Calvo Notícias.</p>
+    <p>© <span id="ano"></span> Porto Calvo Notícias. Todos os direitos reservados.</p>
   </footer>
 
   <script>
@@ -66,3 +87,4 @@
   </script>
 </body>
 </html>
+
