@@ -90,6 +90,11 @@ body {
   margin-bottom: 10px;
 }
 
+/* ESPAÇAMENTO ENTRE PARÁGRAFOS DAS NOTÍCIAS */
+.bloco p {
+  margin-bottom: 16px;
+}
+
 /* NOTÍCIAS */
 
 .card {
@@ -200,3 +205,4 @@ body {
     margin: 4px 8px 0 0;
   }
 }
+
