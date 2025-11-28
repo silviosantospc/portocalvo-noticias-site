@@ -1,3 +1,4 @@
+/* RESET */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,7 +13,6 @@ body {
 }
 
 /* TOPO */
-
 .topo {
   border-bottom: 2px solid #e50914;
   background: #000;
@@ -49,8 +49,7 @@ body {
   color: #e50914;
 }
 
-/* FAIXA DE ANÚNCIO TOPO */
-
+/* FAIXA DE ANÚNCIO */
 .faixa-anuncio {
   max-width: 1080px;
   margin: 0 auto;
@@ -61,8 +60,7 @@ body {
   border-top: 1px solid #222;
 }
 
-/* CONTEÚDO PRINCIPAL */
-
+/* CONTEÚDO */
 .conteudo {
   max-width: 1080px;
   margin: 20px auto 40px;
@@ -75,8 +73,7 @@ body {
   gap: 20px;
 }
 
-/* BLOCO GENÉRICO */
-
+/* BLOCOS */
 .bloco {
   background: #151515;
   border-radius: 10px;
@@ -86,17 +83,11 @@ body {
 }
 
 .bloco h2 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-bottom: 10px;
 }
 
-/* ESPAÇAMENTO ENTRE PARÁGRAFOS DAS NOTÍCIAS */
-.bloco p {
-  margin-bottom: 16px;
-}
-
 /* NOTÍCIAS */
-
 .card {
   background: #151515;
   border-radius: 8px;
@@ -135,8 +126,17 @@ body {
   color: #e50914;
 }
 
-/* COLUNAS */
+/* IMAGEM DAS NOTÍCIAS */
+.imagem-noticia {
+  width: 100%;
+  max-width: 900px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
 
+/* COLUNAS */
 .coluna-noticias {
   min-width: 0;
 }
@@ -146,7 +146,6 @@ body {
 }
 
 /* ANÚNCIOS LATERAIS */
-
 .bloco-anuncio h3 {
   font-size: 1rem;
   margin-bottom: 6px;
@@ -163,7 +162,6 @@ body {
 }
 
 /* CONTATO */
-
 .contato ul {
   list-style: disc;
   padding-left: 20px;
@@ -175,7 +173,6 @@ body {
 }
 
 /* RODAPÉ */
-
 .rodape {
   text-align: center;
   padding: 16px;
@@ -185,7 +182,6 @@ body {
 }
 
 /* RESPONSIVO */
-
 @media (max-width: 800px) {
   .grid-principal {
     grid-template-columns: 1fr;
@@ -205,4 +201,5 @@ body {
     margin: 4px 8px 0 0;
   }
 }
+
 
