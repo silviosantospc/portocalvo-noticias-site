@@ -1,4 +1,6 @@
-/* RESET */
+/* ============================
+   RESET GERAL
+============================ */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,7 +14,9 @@ body {
   line-height: 1.6;
 }
 
-/* TOPO */
+/* ============================
+   TOPO
+============================ */
 .topo {
   border-bottom: 2px solid #e50914;
   background: #000;
@@ -39,17 +43,19 @@ body {
 }
 
 .menu a {
- .bloco p {
-  margin-bottom: 12px;
-}
-
+  color: #f5f5f5;
+  text-decoration: none;
+  margin-left: 16px;
+  font-size: 0.9rem;
 }
 
 .menu a:hover {
   color: #e50914;
 }
 
-/* FAIXA DE ANÚNCIO */
+/* ============================
+   FAIXA DE ANÚNCIO
+============================ */
 .faixa-anuncio {
   max-width: 1080px;
   margin: 0 auto;
@@ -60,7 +66,9 @@ body {
   border-top: 1px solid #222;
 }
 
-/* CONTEÚDO */
+/* ============================
+   CONTEÚDO PRINCIPAL
+============================ */
 .conteudo {
   max-width: 1080px;
   margin: 20px auto 40px;
@@ -73,7 +81,9 @@ body {
   gap: 20px;
 }
 
-/* BLOCOS */
+/* ============================
+   BLOCOS
+============================ */
 .bloco {
   background: #151515;
   border-radius: 10px;
@@ -83,11 +93,13 @@ body {
 }
 
 .bloco h2 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 10px;
 }
 
-/* NOTÍCIAS */
+/* ============================
+   CARTÕES DE NOTÍCIA
+============================ */
 .card {
   background: #151515;
   border-radius: 8px;
@@ -126,17 +138,19 @@ body {
   color: #e50914;
 }
 
-/* IMAGEM DAS NOTÍCIAS */
+/* ============================
+   IMAGENS DAS REPORTAGENS
+============================ */
 .imagem-noticia {
   width: 100%;
-  max-width: 900px;
-  display: block;
-  margin: 20px auto;
   border-radius: 8px;
-  object-fit: cover;
+  margin: 16px 0;
+  border: 1px solid #333;
 }
 
-/* COLUNAS */
+/* ============================
+   COLUNAS
+============================ */
 .coluna-noticias {
   min-width: 0;
 }
@@ -145,7 +159,9 @@ body {
   min-width: 0;
 }
 
-/* ANÚNCIOS LATERAIS */
+/* ============================
+   ANÚNCIOS LATERAIS
+============================ */
 .bloco-anuncio h3 {
   font-size: 1rem;
   margin-bottom: 6px;
@@ -161,7 +177,9 @@ body {
   margin-top: 6px;
 }
 
-/* CONTATO */
+/* ============================
+   CONTATO
+============================ */
 .contato ul {
   list-style: disc;
   padding-left: 20px;
@@ -172,7 +190,9 @@ body {
   color: #e50914;
 }
 
-/* RODAPÉ */
+/* ============================
+   RODAPÉ
+============================ */
 .rodape {
   text-align: center;
   padding: 16px;
@@ -181,7 +201,16 @@ body {
   background: #000;
 }
 
-/* RESPONSIVO */
+/* ============================
+   ESPAÇAMENTO ENTRE PARÁGRAFOS
+============================ */
+.bloco p {
+  margin-bottom: 14px;
+}
+
+/* ============================
+   RESPONSIVO
+============================ */
 @media (max-width: 800px) {
   .grid-principal {
     grid-template-columns: 1fr;
@@ -201,6 +230,8 @@ body {
     margin: 4px 8px 0 0;
   }
 }
+
+
 
 
 
