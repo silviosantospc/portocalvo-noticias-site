@@ -2,200 +2,88 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <title>Porto Calvo Notícias - Informação limpa e direta</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Notícias de Porto Calvo e região do Litoral Norte de Alagoas, com informação objetiva, espaço para o comércio local e serviço à comunidade." />
-
-  <!-- Google AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6162361936327215"
-          crossorigin="anonymous"></script>
-
-  <!-- Estilos -->
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todas as notícias - Porto Calvo Notícias</title>
+  <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
+
   <header class="topo">
     <div class="topo-linha">
-      <div class="logo">
-        Porto Calvo <span>Notícias</span>
-      </div>
+      <div class="logo">Porto Calvo <span>Notícias</span></div>
       <nav class="menu">
-        <a href="#ultimas">Início</a>
+        <a href="../index.html">Início</a>
         <a href="https://www.instagram.com/portocalvo_noticias" target="_blank">Instagram</a>
-        <a href="#tecnologia">Tecnologia</a>
-        <a href="#contato">Contato</a>
+        <a href="../tecnologia.html">Tecnologia</a>
+        <a href="../contato.html">Contato</a>
       </nav>
-    </div>
-
-    <!-- Espaço para banner de topo (AdSense) -->
-    <div class="faixa-anuncio">
-      <p>Espaço reservado para banner do Google AdSense 728x90</p>
     </div>
   </header>
 
   <main class="conteudo">
-    <section class="grid-principal">
-      <!-- COLUNA PRINCIPAL -->
-      <div class="coluna-noticias">
+    <section class="bloco lista-noticias">
+      <h1>Todas as notícias</h1>
+      <p class="meta">As notícias mais recentes aparecem primeiro.</p>
 
-        <!-- ÚLTIMA NOTÍCIA EM DESTAQUE -->
-        <section id="ultimas" class="bloco destaque">
-          <h2>Última notícia em destaque</h2>
-
-          <article class="card-destaque">
-            <img src="imagens/maria-marcal.jpg"
-                 alt="Cantora gospel Maria Marçal durante apresentação"
-                 class="imagem-destaque" />
-
-            <p class="meta">Brasil • 28 de novembro de 2025</p>
-
-            <h1>
-              <a href="noticias/maria-marcal-tentativa-assalto.html">
-                Cantora Maria Marçal e família passam por tentativa de assalto no Rio de Janeiro
-              </a>
-            </h1>
-
-            <p>
-              A cantora gospel Maria Marçal relatou que ela e sua família sofreram uma tentativa de assalto
-              quando seguiam para o aeroporto no Rio de Janeiro. Uma carreta em alta velocidade assustou
-              os criminosos, que fugiram, e a família conseguiu seguir viagem.
-            </p>
-
-            <a class="link-materia" href="noticias/maria-marcal-tentativa-assalto.html">
-              Ler matéria completa
-            </a>
-          </article>
-        </section>
-
-        <!-- MAIS NOTÍCIAS (LISTA) -->
-        <section class="bloco lista-noticias" id="cidade">
-          <h2>Mais notícias</h2>
-
-          <!-- Caminhão na ladeira -->
-          <article class="card">
-            <h3>
-              <a href="noticias/acidente-ladeira-sao-benedito.html">
-                Caminhão desce de ré e bate em residência na Ladeira de São Benedito
-              </a>
-            </h3>
-            <p class="meta">Porto Calvo • 28 de novembro de 2025</p>
-            <p>
-              Caminhão perdeu força e voltou de ré, batendo em uma residência. Moradores levaram susto,
-              mas ninguém ficou ferido.
-            </p>
-          </article>
-
-          <!-- Homem preso no Carvão -->
-          <article class="card">
-            <h3>
-              <a href="noticias/homem-preso-carvao-maragogi.html">
-                Homem é preso por violência doméstica e posse irregular de arma em Maragogi
-              </a>
-            </h3>
-            <p class="meta">Maragogi • 25 de novembro de 2025</p>
-            <p>
-              Após denúncia de violência doméstica no povoado Carvão, a Polícia Militar prendeu um homem
-              armado, com drogas e vários documentos falsificados dentro do veículo.
-            </p>
-          </article>
-
-          <!-- Cassação em Passo de Camaragibe -->
-          <article class="card">
-            <h3>
-              <a href="noticias/cassacao-prefeito-passo-camaragibe.html">
-                Justiça cassa mandatos do prefeito e do vice de Passo de Camaragibe
-              </a>
-            </h3>
-            <p class="meta">Passo de Camaragibe • 27 de novembro de 2025</p>
-            <p>
-              Sentença da 12ª Zona Eleitoral aponta aumento expressivo da folha de pagamento em ano
-              eleitoral e reconhece abuso de poder político e econômico; prefeito e vice seguem no cargo
-              enquanto recorrem.
-            </p>
-          </article>
-
-          <!-- Maria Marçal também aparece na lista -->
-          <article class="card">
-            <h3>
-              <a href="noticias/maria-marcal-tentativa-assalto.html">
-                Cantora Maria Marçal e família passam por tentativa de assalto no Rio de Janeiro
-              </a>
-            </h3>
-            <p class="meta">Brasil • 28 de novembro de 2025</p>
-            <p>
-              Família foi surpreendida por homens armados quando seguia para o aeroporto, mas conseguiu
-              escapar após a chegada de uma carreta em alta velocidade.
-            </p>
-          </article>
-
-          <!-- Link para página de arquivos -->
-          <a class="link-materia ver-todas" href="noticias/index.html">
-            Ver todas as notícias
+      <!-- 1) Cantora Maria Marçal (mais recente) -->
+      <article class="card">
+        <h2>
+          <a href="maria-marcal-tentativa-assalto.html">
+            Cantora Maria Marçal e família passam por tentativa de assalto no Rio de Janeiro
           </a>
-        </section>
+        </h2>
+        <p class="meta">Brasil • 28 de novembro de 2025</p>
+        <p>
+          A cantora gospel Maria Marçal relatou que ela e sua família sofreram uma tentativa
+          de assalto enquanto seguiam para o aeroporto no Rio de Janeiro, a caminho de Alagoas,
+          onde cumpriria agenda de shows.
+        </p>
+      </article>
 
-        <!-- BLOCO TECNOLOGIA / AFILIADOS -->
-        <section class="bloco" id="tecnologia">
-          <h2>Tecnologia e oportunidades</h2>
-          <article class="card">
-            <h3>
-              <a href="#">
-                Dicas de tecnologia para economizar nas compras online
-              </a>
-            </h3>
-            <p class="meta">Tecnologia • Data</p>
-            <p>
-              Espaço fixo para você publicar matérias sobre aplicativos, ferramentas e sites que ajudam
-              o leitor a economizar. Aqui você também pode inserir links de afiliados de forma natural.
-            </p>
-            <p>
-              <a class="link-materia"
-                 href="https://www.mercadolivre.com.br/"
-                 target="_blank" rel="noopener noreferrer">
-                Ver ofertas recomendadas no Mercado Livre
-              </a>
-            </p>
-          </article>
-        </section>
-      </div>
-
-      <!-- COLUNA LATERAL -->
-      <aside class="coluna-lateral">
-        <section class="bloco bloco-anuncio">
-          <h3>Publicidade</h3>
-          <p>Espaço para anúncio de comércio local.</p>
-          <p class="dica-anuncio">
-            Ex: supermercados, pousadas, mercadinhos, farmácias, açougues, bares, oficinas, lojas de roupas etc.
-          </p>
-        </section>
-
-        <section class="bloco bloco-anuncio">
-          <h3>Banner do parceiro</h3>
-          <a href="https://www.mercadolivre.com.br/" target="_blank" rel="noopener noreferrer">
-            <img src="imagens/banner-mercado-livre.jpg"
-                 alt="Ofertas especiais no Mercado Livre"
-                 class="banner-parceiro" />
+      <!-- 2) Cassação do prefeito de Passo de Camaragibe -->
+      <article class="card">
+        <h2>
+          <a href="cassacao-prefeito-passo-camaragibe.html">
+            Justiça cassa mandatos do prefeito e do vice de Passo de Camaragibe
           </a>
-        </section>
+        </h2>
+        <p class="meta">Passo de Camaragibe • 27 de novembro de 2025</p>
+        <p>
+          Sentença da 12ª Zona Eleitoral aponta aumento expressivo da folha de pagamento em ano eleitoral
+          e reconhece abuso de poder político e econômico; prefeito e vice seguem no cargo enquanto recorrem.
+        </p>
+      </article>
 
-        <section class="bloco bloco-anuncio">
-          <h3>AdSense lateral</h3>
-          <p>Espaço reservado para bloco de anúncio do Google AdSense na lateral.</p>
-        </section>
-      </aside>
-    </section>
+      <!-- 3) Homem preso no povoado Carvão, em Maragogi -->
+      <article class="card">
+        <h2>
+          <a href="homem-preso-carvao-maragogi.html">
+            Homem é preso por violência doméstica e posse irregular de arma em Maragogi
+          </a>
+        </h2>
+        <p class="meta">Maragogi • 25 de novembro de 2025</p>
+        <p>
+          Após denúncia de violência doméstica no povoado Carvão, em Maragogi, a Polícia Militar prendeu
+          um homem com revólver, munições, drogas e diversos documentos de identificação falsificados.
+        </p>
+      </article>
 
-    <!-- CONTATO -->
-    <section id="contato" class="bloco contato">
-      <h2>Contato e comercial</h2>
-      <p>
-        Para sugestões de pauta, denúncias, envio de fotos e vídeos ou para anunciar no Porto Calvo Notícias:
-      </p>
-      <ul>
-        <li>E-mail: <strong>contato@portocalvonoticias.com.br</strong></li>
-        <li>Instagram: <a href="https://www.instagram.com/portocalvo_noticias" target="_blank">@portocalvo_noticias</a></li>
-        <li>YouTube: <a href="https://youtube.com/@portocalvonoticias" target="_blank">/portocalvonoticias</a></li>
-      </ul>
+      <!-- 4) Acidente na Ladeira de São Benedito -->
+      <article class="card">
+        <h2>
+          <a href="acidente-ladeira-sao-benedito.html">
+            Caminhão desce de ré e bate em residência na Ladeira de São Benedito, em Porto Calvo
+          </a>
+        </h2>
+        <p class="meta">Porto Calvo • 28 de novembro de 2025</p>
+        <p>
+          Caminhão perdeu força ao subir a ladeira, desceu de ré e atingiu a fachada de uma residência.
+          Moradores tiveram um grande susto, mas ninguém ficou ferido.
+        </p>
+      </article>
+
+      <!-- Link de volta para a página inicial -->
+      <a class="link-materia" href="../index.html">Voltar para a página inicial</a>
     </section>
   </main>
 
