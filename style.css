@@ -264,6 +264,20 @@ body {
   }
 }
 
+/* =========================
+   AJUSTE DAS IMAGENS DAS MATÉRIAS INTERNAS
+   ========================= */
+
+.conteudo-materia img {
+  width: 100%;
+  max-width: 900px;
+  max-height: 420px;
+  object-fit: cover;       /* impede de estourar */
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
 
 
 
