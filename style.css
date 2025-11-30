@@ -265,18 +265,20 @@ body {
 }
 
 /* =========================
-   AJUSTE DAS IMAGENS DAS MATÉRIAS INTERNAS
+   IMAGEM DAS MATÉRIAS INTERNAS
    ========================= */
 
-.conteudo-materia img {
+.imagem-noticia {
   width: 100%;
   max-width: 900px;
   max-height: 420px;
-  object-fit: cover;       /* impede de estourar */
+  object-fit: cover;
   display: block;
   margin: 20px auto;
   border-radius: 8px;
 }
+
+
 
 
 
