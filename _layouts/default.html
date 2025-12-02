@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
+  <header class="site-header">
+    <div class="top-bar">
+      <div class="container">
+        <span>Porto Calvo - AL | {{ "now" | date: "%d/%m/%Y" }}</span>
+        <div class="social-icons">Instagram | Facebook</div>
+      </div>
+    </div>
+    
+    <div class="main-header container">
+      <div class="logo">
+        <a href="/">PORTO CALVO <span>NOTÍCIAS</span></a>
+      </div>
+      <div class="header-ad">
+        <div class="ad-placeholder">Anuncie Aqui (728x90)</div>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <div class="container">
+        <ul>
+          <li><a href="/">Início</a></li>
+          <li><a href="/#policia">Polícia</a></li>
+          <li><a href="/#politica">Política</a></li>
+          <li><a href="/#cidade">Cidade</a></li>
+          <li class="destaque-tec"><a href="/tecnologia">Tecnologia & Ofertas</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-content container">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Porto Calvo Notícias. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
