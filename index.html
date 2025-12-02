@@ -1,1 +1,31 @@
+---
+layout: default
+title: Home
+---
+<section class="hero-section">
+  {% for post in site.posts limit:1 %}
+  <div class="hero-main">
+    <a href="{{ post.url }}">
+      <img src="{{ post.image }}" alt="{{ post.title }}">
+      <div class="hero-text">
+        <span class="tag">{{ post.category }}</span>
+        <h2>{{ post.title }}</h2>
+      </div>
+    </a>
+  </div>
+  {% endfor %}
+</section>
 
+<div class="content-wrapper">
+  <div class="main-column">
+    <h3>Últimas Notícias</h3>
+    <div class="news-list">
+      {% for post in site.posts offset:1 %}
+      <article class="news-card">
+         <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+         <p>{{ post.description }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</div>
