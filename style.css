@@ -1,283 +1,49 @@
-/* =========================
-   ESTILO GERAL
-   ========================= */
+/* Reset Básico */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Roboto', sans-serif; background: #f4f4f4; color: #333; }
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; display: block; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 15px; }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* Cabeçalho */
+.top-bar { background: #1a1a1a; color: #fff; font-size: 12px; padding: 5px 0; }
+.top-bar .container { display: flex; justify-content: space-between; }
+.main-header { display: flex; align-items: center; justify-content: space-between; padding: 20px 0; background: #fff; }
+.logo a { font-family: 'Merriweather', serif; font-size: 28px; font-weight: 900; color: #000; }
+.logo span { color: #cc0000; }
 
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: #0b0b0d;
-  color: #f5f5f5;
-  line-height: 1.6;
-}
+/* Menu */
+.main-nav { background: #cc0000; }
+.main-nav ul { list-style: none; display: flex; }
+.main-nav li a { display: block; padding: 15px 20px; color: #fff; font-weight: 700; text-transform: uppercase; font-size: 14px; }
+.main-nav li a:hover { background: #990000; }
+.destaque-tec { background: #000; } /* Destaque para Tecnologia */
 
-/* =========================
-   TOPO
-   ========================= */
+/* Hero Section (Destaques) */
+.hero-section { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; margin-top: 20px; }
+.hero-main { position: relative; height: 400px; overflow: hidden; border-radius: 4px; }
+.hero-main img { width: 100%; height: 100%; object-fit: cover; }
+.hero-text { position: absolute; bottom: 0; left: 0; right: 0; padding: 20px; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: #fff; }
+.hero-text h2 { font-family: 'Merriweather', serif; font-size: 24px; }
 
-.topo {
-  border-bottom: 2px solid #e50914;
-  background: #000;
-}
+/* Banner Afiliado */
+.affiliate-banner { margin: 30px 0; background: #fff; padding: 20px; text-align: center; border: 2px dashed #ccc; }
+.banner-box h3 { color: #cc0000; }
 
-.topo-linha {
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 12px 16px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-}
+/* Layout Conteúdo + Sidebar */
+.content-wrapper { display: grid; grid-template-columns: 70% 30%; gap: 30px; margin: 30px 0; }
+.section-title { border-bottom: 2px solid #cc0000; margin-bottom: 20px; padding-bottom: 5px; text-transform: uppercase; }
 
-.logo {
-  font-weight: 700;
-  font-size: 1.4rem;
-  text-transform: uppercase;
-}
+/* Lista de Notícias */
+.news-card { display: flex; gap: 15px; margin-bottom: 20px; background: #fff; padding: 15px; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+.news-img { width: 200px; height: 130px; flex-shrink: 0; }
+.news-img img { width: 100%; height: 100%; object-fit: cover; }
+.news-info h2 { font-size: 18px; margin: 5px 0; }
+.date { font-size: 12px; color: #888; text-transform: uppercase; }
 
-.logo span {
-  color: #e50914;
-}
-
-/* MENU */
-
-.menu a {
-  color: #f5f5f5;
-  text-decoration: none;
-  margin-left: 16px;
-  font-size: 0.9rem;
-}
-
-.menu a:hover {
-  color: #e50914;
-}
-
-/* =========================
-   FAIXA DE ANÚNCIO TOPO
-   ========================= */
-
-.faixa-anuncio {
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 8px 16px 12px;
-  text-align: center;
-  font-size: 0.85rem;
-  color: #ccc;
-  border-top: 1px solid #222;
-}
-
-/* =========================
-   CONTEÚDO PRINCIPAL
-   ========================= */
-
-.conteudo {
-  max-width: 1080px;
-  margin: 20px auto 40px;
-  padding: 0 16px;
-}
-
-.grid-principal {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 20px;
-}
-
-/* BLOCO GENÉRICO */
-
-.bloco {
-  background: #151515;
-  border-radius: 10px;
-  padding: 16px 18px;
-  border: 1px solid #262626;
-  margin-bottom: 20px;
-}
-
-.bloco h2 {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-}
-
-/* Espaçamento padrão entre parágrafos dentro dos blocos */
-.bloco p {
-  margin-bottom: 12px;
-}
-
-/* =========================
-   NOTÍCIAS
-   ========================= */
-
-.card {
-  background: #151515;
-  border-radius: 8px;
-  padding: 12px 14px;
-  border: 1px solid #262626;
-  margin-bottom: 12px;
-}
-
-.card-destaque {
-  background: #151515;
-  border-radius: 8px;
-  padding: 12px 14px 16px;
-  border: 2px solid #e50914;
-}
-
-/* IMAGEM DA ÚLTIMA NOTÍCIA EM DESTAQUE */
-.imagem-destaque {
-  width: 100%;
-  max-height: 320px;      /* altura padrão */
-  object-fit: cover;      /* recorta a imagem para caber */
-  display: block;
-  border-radius: 6px;
-  margin-bottom: 10px;
-}
-
-.card h3 a,
-.card-destaque h1,
-.card-destaque a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.card h3 a:hover,
-.card-destaque a:hover {
-  color: #e50914;
-}
-
-.meta {
-  font-size: 0.8rem;
-  color: #aaaaaa;
-  margin-bottom: 6px;
-}
-
-.link-materia {
-  display: inline-block;
-  margin-top: 4px;
-  font-size: 0.9rem;
-  color: #e50914;
-}
-
-/* Cabeçalho da lista de notícias com botão "Ver todas" */
-.lista-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  margin-bottom: 8px;
-}
-
-.lista-header h2 {
-  margin: 0;
-}
-
-/* =========================
-   COLUNAS
-   ========================= */
-
-.coluna-noticias {
-  min-width: 0;
-}
-
-.coluna-lateral {
-  min-width: 0;
-}
-
-/* =========================
-   ANÚNCIOS LATERAIS
-   ========================= */
-
-.bloco-anuncio h3 {
-  font-size: 1rem;
-  margin-bottom: 6px;
-}
-
-.bloco-anuncio p {
-  font-size: 0.9rem;
-}
-
-.dica-anuncio {
-  font-size: 0.8rem;
-  color: #bbbbbb;
-  margin-top: 6px;
-}
-
-/* Banner do parceiro (imagem afiliado) */
-.banner-parceiro img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-  margin: 6px 0;
-}
-
-/* =========================
-   CONTATO
-   ========================= */
-
-.contato ul {
-  list-style: disc;
-  padding-left: 20px;
-  margin-top: 8px;
-}
-
-.contato a {
-  color: #e50914;
-}
-
-/* =========================
-   RODAPÉ
-   ========================= */
-
-.rodape {
-  text-align: center;
-  padding: 16px;
-  font-size: 0.8rem;
-  border-top: 1px solid #262626;
-  background: #000;
-}
-
-/* =========================
-   RESPONSIVO
-   ========================= */
-
-@media (max-width: 800px) {
-  .grid-principal {
-    grid-template-columns: 1fr;
-  }
-
-  .topo-linha {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .menu {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .menu a {
-    margin: 4px 8px 0 0;
-  }
-}
-
-/* =========================
-   IMAGEM DAS MATÉRIAS INTERNAS
-   ========================= */
-
-.imagem-noticia {
-  width: 100%;
-  max-width: 900px;
-  max-height: 420px;
-  object-fit: cover;
-  display: block;
-  margin: 20px auto;
-  border-radius: 8px;
-}
-
+/* Sidebar */
+.sidebar .widget { background: #fff; padding: 15px; margin-bottom: 20px; border-radius: 4px; }
+.ad-square { background: #eee; height: 250px; display: flex; align-items: center; justify-content: center; color: #999; }
 
 
 
