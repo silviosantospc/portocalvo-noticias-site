@@ -1,6 +1,6 @@
 title: Porto Calvo Notícias
 email: contato@portocalvonoticias.com.br
-description: >- # Descrição para o Google
+description: >-
   Notícias atualizadas de Porto Calvo, Maragogi e Região Norte de Alagoas.
 baseurl: ""
 url: "https://www.portocalvonoticias.com.br"
@@ -17,7 +17,3 @@ header_pages:
  - index.html
  - tecnologia.html
  - contato.html
-# Atualizacao do sistema
-include:
-  - admin/config.yml
-  - admin/index.html
