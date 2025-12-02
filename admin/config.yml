@@ -1,18 +1,27 @@
 backend:
   name: git-gateway
   branch: main
-  site_url: https://portocalvonoticias.com.br
 
-media_folder: "static/img"
-public_folder: "/img"
+media_folder: "assets/img"
+public_folder: "/assets/img"
+
+site_url: "https://www.portocalvonoticias.com.br"
+display_url: "https://www.portocalvonoticias.com.br"
+logo_url: "https://www.portocalvonoticias.com.br/assets/img/logo.png"
+
+locale: "pt"
 
 collections:
   - name: "noticias"
     label: "Notícias"
-    folder: "noticias"
+    folder: "_posts"
     create: true
-    slug: "{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { label: "Título", name: "title", widget: "string" }
-      - { label: "Data", name: "date", widget: "datetime" }
-      - { label: "Conteúdo", name: "body", widget: "markdown" }
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Data de Publicação", name: "date", widget: "datetime"}
+      - {label: "Imagem de Destaque", name: "image", widget: "image"}
+      - {label: "Categoria", name: "category", widget: "select", options: ["Polícia", "Política", "Esporte", "Cidade", "Tecnologia"]}
+      - {label: "Resumo", name: "description", widget: "text", required: false}
+      - {label: "Corpo da Notícia", name: "body", widget: "markdown"}
