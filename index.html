@@ -14,51 +14,18 @@ title: Home
     </a>
   </div>
   {% endfor %}
-  
-  <div class="hero-side">
-    {% for post in site.posts limit:2 offset:1 %}
-    <div class="hero-small">
-      <a href="{{ post.url }}">
-        <div class="small-text">
-          <span class="tag-small">{{ post.category }}</span>
-          <h3>{{ post.title }}</h3>
-        </div>
-      </a>
-    </div>
-    {% endfor %}
-  </div>
-</section>
-
-<section class="affiliate-banner">
-  <div class="banner-box">
-    <h3>Espaço Publicitário</h3>
-    <p>Anuncie aqui sua marca</p>
-  </div>
 </section>
 
 <div class="content-wrapper">
   <div class="main-column">
-    <h3 class="section-title">Últimas Notícias</h3>
+    <h3>Últimas Notícias</h3>
     <div class="news-list">
-      {% for post in site.posts offset:3 %}
+      {% for post in site.posts offset:1 %}
       <article class="news-card">
-        <div class="news-img">
-          <img src="{{ post.image }}" alt="{{ post.title }}">
-        </div>
-        <div class="news-info">
-          <span class="date">{{ post.date | date: "%d/%m/%Y" }}</span>
-          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-          <p>{{ post.description }}</p>
-        </div>
+         <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+         <p>{{ post.description }}</p>
       </article>
       {% endfor %}
     </div>
   </div>
-
-  <aside class="sidebar">
-    <div class="widget">
-      <h3>Publicidade</h3>
-      <div class="ad-square">Banner (300x250)</div>
-    </div>
-  </aside>
 </div>
